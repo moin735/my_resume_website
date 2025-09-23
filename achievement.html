@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html#hero">
+            <span class="brand-logo">M</span>
+            <span class="brand-text">MyPortfolio</span>
+        </a>
+        <nav class="nav">
+            <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+            <a href="index.html#about">About</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="achievement.html" class="btn btn-outline">Achievement</a>
+            <a class="btn btn-outline" href="assets/My_CV.pdf" download>Download CV</a>
+        </nav>
+    </header>
+
+    <div id="tsparticles" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-2;"></div>
+
+    <main>
+        <section class="section container reveal">
+            <h2>Achievements & Certificates</h2>
+            <p style="color: var(--muted); margin-bottom: 20px;">Here are some of my certifications showcasing my skills and expertise:</p>
+
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <img src="assets/achievements/moinac1.png" alt="Responsive Web Design Certificate" />
+                    <h3>Get started with AI agent development on Azure</h3>
+                    <p>Issued by: Microsoft</p>
+                    <a href="assets/achievements/moinac1.png" target="_blank" class="btn btn-outline">View Image</a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/project2.jpg" alt="Flutter Developer Certificate" />
+                    <h3>Flutter Developer</h3>
+                    <p>Issued by: Udemy</p>
+                    <a href="assets/images/project2.jpg" target="_blank" class="btn btn-outline">View Image</a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/project3.jpg" alt="React Mastery Certificate" />
+                    <h3>React Mastery</h3>
+                    <p>Issued by: Coursera</p>
+                    <a href="assets/images/project3.jpg" target="_blank" class="btn btn-outline">View Image</a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/project4.jpg" alt="Node.js Fundamentals Certificate" />
+                    <h3>Node.js Fundamentals</h3>
+                    <p>Issued by: Codecademy</p>
+                    <a href="assets/images/project4.jpg" target="_blank" class="btn btn-outline">View Image</a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/project4.jpg" alt="Node.js Fundamentals Certificate" />
+                    <h3>Node.js Fundamentals</h3>
+                    <p>Issued by: Codecademy</p>
+                    <a href="assets/images/project4.jpg" target="_blank" class="btn btn-outline">View Image</a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/project4.jpg" alt="Node.js Fundamentals Certificate" />
+                    <h3>Node.js Fundamentals</h3>
+                    <p>Issued by: Codecademy</p>
+                    <a href="assets/images/project4.jpg" target="_blank" class="btn btn-outline">View Image</a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/project4.jpg" alt="Node.js Fundamentals Certificate" />
+                    <h3>Node.js Fundamentals</h3>
+                    <p>Issued by: Codecademy</p>
+                    <a href="assets/images/project4.jpg" target="_blank" class="btn btn-outline">View Image</a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/project4.jpg" alt="Node.js Fundamentals Certificate" />
+                    <h3>Node.js Fundamentals</h3>
+                    <p>Issued by: Codecademy</p>
+                    <a href="assets/images/project4.jpg" target="_blank" class="btn btn-outline">View Image</a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/project4.jpg" alt="Node.js Fundamentals Certificate" />
+                    <h3>Node.js Fundamentals</h3>
+                    <p>Issued by: Codecademy</p>
+                    <a href="assets/images/project4.jpg" target="_blank" class="btn btn-outline">View Image</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> MD. MOINUR REZA — All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.1.0/tsparticles.bundle.min.js"></script>
+    <script>
+        tsParticles.load("tsparticles", {
+            fullScreen: {
+                enable: false
+            },
+            background: {
+                color: "transparent"
+            },
+            particles: {
+                number: {
+                    value: 40
+                },
+                color: {
+                    value: ["#00ffc6", "#00adff", "#e6f1ff"]
+                },
+                shape: {
+                    type: "polygon",
+                    options: {
+                        polygon: {
+                            sides: 5
+                        }
+                    }
+                },
+                opacity: {
+                    value: 0.5
+                },
+                size: {
+                    value: {
+                        min: 8,
+                        max: 16
+                    }
+                },
+                move: {
+                    enable: true,
+                    speed: 1.2,
+                    direction: "none",
+                    outModes: {
+                        default: "bounce"
+                    }
+                },
+                links: {
+                    enable: true,
+                    color: "#00ffc6",
+                    distance: 120,
+                    opacity: 0.2,
+                    width: 1
+                }
+            },
+            detectRetina: true
+        });
+    </script>
+</body>
+
+</html>
