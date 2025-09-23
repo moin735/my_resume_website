@@ -161,7 +161,8 @@ body {
 }
 
 .gradient-text {
-    font-size: clamp(36px, 6vw, 64px);
+    font-size: 2.5rem;
+    /* Fixed size for all screens */
     font-weight: 800;
     letter-spacing: .5px;
     background: linear-gradient(90deg, var(--primary), var(--primary-2));
@@ -531,4 +532,38 @@ body {
     max-height: 100vh;
     z-index: -2;
     pointer-events: none;
+}
+
+#typeTarget {
+    font-size: 2.5rem;
+    /* Fixed size for all screens */
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+#fixedName {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: .5px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#typeTarget.moving-text {
+    display: block;
+    margin-top: 8px;
+    font-size: 1.5rem;
+    color: var(--primary-2);
+    min-height: 2.2em;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .hero-inner {
+        padding: 60px 8px 40px;
+    }
 }

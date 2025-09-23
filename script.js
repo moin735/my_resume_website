@@ -10,31 +10,40 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 });
 
 // Typing effect for name text
-(function typeEffect() {
-    const el = document.getElementById('typeTarget');
-    if (!el) return; // Prevent error if element is missing
-    const words = ['MD. MOINUR REZA', 'a Software Developer', 'a Web Developer', 'here to serve you.'];
-    let i = 0,
-        j = 0,
-        deleting = false;
+// Example: simple typing effect
+const texts = [
+    "Frontend Developer • UI/UX Enthusiast",
+    "React | Flutter | JavaScript | CSS",
+    "Open to Collaboration!"
+];
+let idx = 0,
+    char = 0,
+    isDeleting = false;
+const el = document.getElementById('typeTarget');
 
-    function tick() {
-        const word = words[i];
-        j += deleting ? -1 : 1;
-        el.textContent = word.slice(0, j);
-        if (!deleting && j === word.length) {
-            deleting = true;
-            setTimeout(tick, 1300);
-            return;
+function type() {
+    if (!el) return;
+    let current = texts[idx];
+    if (isDeleting) {
+        el.textContent = current.substring(0, char--);
+        if (char < 0) {
+            isDeleting = false;
+            idx = (idx + 1) % texts.length;
+            setTimeout(type, 600);
+        } else {
+            setTimeout(type, 40);
         }
-        if (deleting && j === 0) {
-            deleting = false;
-            i = (i + 1) % words.length;
+    } else {
+        el.textContent = current.substring(0, char++);
+        if (char > current.length) {
+            isDeleting = true;
+            setTimeout(type, 1200);
+        } else {
+            setTimeout(type, 80);
         }
-        setTimeout(tick, deleting ? 50 : 90);
     }
-    tick();
-})();
+}
+type();
 
 // Reveal on scroll
 const io = new IntersectionObserver(entries => {
