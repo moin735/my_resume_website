@@ -1,229 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
-    <div id="tsparticles" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-2;"></div>
+  <body>
+    <div
+      id="tsparticles"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -2;
+      "
+    ></div>
     <header class="site-header">
-        <a class="brand" href="#hero">
-            <span class="brand-logo">M</span>
-            <span class="brand-text">MyPortfolio</span>
-        </a>
-        <nav class="nav">
-            <button id="themeToggle" aria-label="Toggle theme">🌙</button>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="achievement.html" class="btn btn-outline">Achievement</a>
-            <a class="btn btn-outline" href="assets/My_CV.pdf" download>Download CV</a>
-        </nav>
+      <a class="brand" href="#hero">
+        <span class="brand-logo">M</span>
+        <span class="brand-text">MyPortfolio</span>
+      </a>
+      <nav class="nav">
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="achievement.html" class="btn btn-outline">Achievement</a>
+        <a class="btn btn-outline" href="assets/My_CV.pdf" download
+          >Download CV</a
+        >
+      </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero">
-            <div class="hero-inner">
-                <div class="avatar-glow"></div>
-                <div class="profile-pic-wrap">
-                    <img src="assets/images/moin.png" alt="Profile picture" class="profile-pic" />
-                </div>
-                <h1 class="gradient-text" style="margin-bottom:0;">
-                    Hi! I'm <span id="fixedName">MD. MOINUR REZA</span>
-                </h1>
-                <div id="typeTarget" class="moving-text"></div>
-                <p class="subtitle">Frontend Developer • UI/UX Enthusiast</p>
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/moinur-reza-22b59a212/" aria-label="LinkedIn" target="_blank" rel="noopener"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="https://github.com/moin735" aria-label="GitHub" target="_blank" rel="noopener"><img src="assets/icons/github.png" alt="GitHub"></a>
-                    <a href="https://twitter.com/" aria-label="Twitter" target="_blank" rel="noopener"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
-                </div>
-                <div class="cta">
-                    <a href="#projects" class="btn btn-primary" style="pointer-events:auto;cursor:pointer;z-index:2;position:relative;">See my work</a>
-                    <a href="#contact" class="btn btn-ghost" style="pointer-events:auto;cursor:pointer;z-index:2;position:relative;">Contact me</a>
-                </div>
-            </div>
-            <div class="noise"></div>
-        </section>
+      <section id="hero" class="hero">
+        <div class="hero-inner">
+          <div class="avatar-glow"></div>
+          <div class="profile-pic-wrap">
+            <img
+              src="assets/images/moin.png"
+              alt="Profile picture"
+              class="profile-pic"
+            />
+          </div>
+          <h1 class="gradient-text" style="margin-bottom: 0">
+            Hi! I'm <span id="fixedName">MD. MOINUR REZA</span>
+          </h1>
+          <div id="typeTarget" class="moving-text"></div>
+          <p
+            class="subtitle"
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 18px;
+              flex-wrap: wrap;
+            "
+          >
+            <a
+              href="mailto:mr7350516@gmail.com
+"
+              style="color: var(--primary-2); text-decoration: none"
+              >✉️ mr7350516@gmail.com
+            </a>
+            <a
+              href="tel:+8801646981878"
+              style="color: var(--primary-2); text-decoration: none"
+              >📞 +8801646981878</a
+            >
+            <span style="color: var(--text)">📍 Uttara, Dhaka-1230</span>
+          </p>
+          <div class="social">
+            <a
+              href="https://www.linkedin.com/in/moinur-reza-22b59a212/"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
+              ><img src="assets/icons/linkedin.svg" alt="LinkedIn"
+            /></a>
+            <a
+              href="https://github.com/moin735"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener"
+              ><img src="assets/icons/github.png" alt="GitHub"
+            /></a>
+            <a
+              href="https://twitter.com/"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener"
+              ><img src="assets/icons/twitter.svg" alt="Twitter"
+            /></a>
+          </div>
+          <div class="cta">
+            <a
+              href="#projects"
+              class="btn btn-primary"
+              style="
+                pointer-events: auto;
+                cursor: pointer;
+                z-index: 2;
+                position: relative;
+              "
+              >See my work</a
+            >
+            <a
+              href="#contact"
+              class="btn btn-ghost"
+              style="
+                pointer-events: auto;
+                cursor: pointer;
+                z-index: 2;
+                position: relative;
+              "
+              >Contact me</a
+            >
+          </div>
+        </div>
+        <div class="noise"></div>
+      </section>
 
-        <section id="about" class="section container reveal">
-            <h2>About</h2>
-            <p>
-                I’m a Computer Science student at Daffodil International University with expertise in mobile and web development. I build responsive apps with Flutter and interactive websites using React, HTML, CSS, and JavaScript. Skilled in Firebase, APIs, and state
-                management, I focus on creating seamless user experiences. Always learning, I strive to deliver impactful digital solutions across platforms.
-            </p>
-        </section>
+      <section id="about" class="section container reveal">
+        <h2>About</h2>
+        <p>
+          I’m a Computer Science student at Daffodil International University
+          with expertise in mobile and web development. I build responsive apps
+          with Flutter and interactive websites using React, HTML, CSS, and
+          JavaScript. Skilled in Firebase, APIs, and state management, I focus
+          on creating seamless user experiences. Always learning, I strive to
+          deliver impactful digital solutions across platforms.
+        </p>
+      </section>
 
-        <section id="skills" class="section container reveal">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <img src="assets/icons/C_Programming_Language.png" alt="C"><span>C</span>
-                </div>
-                <div class="skill-card">
-                    <img src="assets/icons/Python-logo-notext.svg.webp" alt="Python"><span>Python</span>
-                </div>
-                <div class="skill-card">
-                    <img src="assets/icons/flutter.png" alt="Flutter"><span>Flutter</span>
-                </div>
-                <div class="skill-card">
-                    <img src="assets/icons/html5.svg" alt="HTML5"><span>HTML5</span>
-                </div>
-                <div class="skill-card">
-                    <img src="assets/icons/css3.svg" alt="CSS3"><span>CSS3</span>
-                </div>
-                <div class="skill-card">
-                    <img src="assets/icons/js.svg" alt="JavaScript"><span>JavaScript</span>
-                </div>
-                <div class="skill-card">
-                    <img src="assets/icons/react.svg" alt="React"><span>React</span>
-                </div>
-                <div class="skill-card">
-                    <img src="assets/icons/node.svg" alt="Node.js"><span>Node.js</span>
-                </div>
-            </div>
-        </section>
+      <section id="skills" class="section container reveal">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="assets/icons/C_Programming_Language.png" alt="C" /><span
+              >C</span
+            >
+          </div>
+          <div class="skill-card">
+            <img
+              src="assets/icons/Python-logo-notext.svg.webp"
+              alt="Python"
+            /><span>Python</span>
+          </div>
+          <div class="skill-card">
+            <img src="assets/icons/flutter.png" alt="Flutter" /><span
+              >Flutter</span
+            >
+          </div>
+          <div class="skill-card">
+            <img src="assets/icons/html5.svg" alt="HTML5" /><span>HTML5</span>
+          </div>
+          <div class="skill-card">
+            <img src="assets/icons/css3.svg" alt="CSS3" /><span>CSS3</span>
+          </div>
+          <div class="skill-card">
+            <img src="assets/icons/js.svg" alt="JavaScript" /><span
+              >JavaScript</span
+            >
+          </div>
+          <div class="skill-card">
+            <img src="assets/icons/react.svg" alt="React" /><span>React</span>
+          </div>
+          <div class="skill-card">
+            <img src="assets/icons/node.svg" alt="Node.js" /><span
+              >Node.js</span
+            >
+          </div>
+        </div>
+      </section>
 
-        <section id="projects" class="section container reveal">
-            <h2>Projects</h2>
-            <div class="grid">
-                <article class="card">
-                    <img src="assets/images/project1.jpg" alt="Project 1 preview" />
-                    <div class="card-body">
-                        <h3>Alif Steel App</h3>
-                        <p>Mobile app for steel business management. Features inventory, sales, and reporting.</p>
-                        <div class="card-actions">
-                            <a class="btn btn-ghost" href="#" target="_blank">Live</a>
-                            <a class="btn btn-outline" href="https://github.com/khan4677/alif_steel_app" target="_blank">Code</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="assets/images/project2.jpg" alt="Project 2 preview" />
-                    <div class="card-body">
-                        <h3>Project Two</h3>
-                        <p>E‑commerce UI with cart and product filters.</p>
-                        <div class="card-actions">
-                            <a class="btn btn-ghost" href="#" target="_blank">Live</a>
-                            <a class="btn btn-outline" href="https://github.com/khan4677/alif_steel_app" target="_blank">Code</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="assets/images/project3.jpg" alt="Project 3 preview" />
-                    <div class="card-body">
-                        <h3>Project Three</h3>
-                        <p>Dashboard with charts and dark mode.</p>
-                        <div class="card-actions">
-                            <a class="btn btn-ghost" href="#" target="_blank">Live</a>
-                            <a class="btn btn-outline" href="#" target="_blank">Code</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="assets/images/project4.jpg" alt="Project 4 preview" />
-                    <div class="card-body">
-                        <h3>Project Four</h3>
-                        <p>Travel blog with MDX‑style posts and search.</p>
-                        <div class="card-actions">
-                            <a class="btn btn-ghost" href="#" target="_blank">Live</a>
-                            <a class="btn btn-outline" href="#" target="_blank">Code</a>
-                        </div>
-                    </div>
-                </article>
+      <section id="projects" class="section container reveal">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="assets/images/project1.jpg" alt="Project 1 preview" />
+            <div class="card-body">
+              <h3>Alif Steel App</h3>
+              <p>
+                Mobile app for steel business management. Features inventory,
+                sales, and reporting.
+              </p>
+              <div class="card-actions">
+                <a class="btn btn-ghost" href="#" target="_blank">Live</a>
+                <a
+                  class="btn btn-outline"
+                  href="https://github.com/khan4677/alif_steel_app"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
             </div>
-        </section>
+          </article>
+          <article class="card">
+            <img src="assets/images/project2.jpg" alt="Project 2 preview" />
+            <div class="card-body">
+              <h3>Project Two</h3>
+              <p>E‑commerce UI with cart and product filters.</p>
+              <div class="card-actions">
+                <a class="btn btn-ghost" href="#" target="_blank">Live</a>
+                <a
+                  class="btn btn-outline"
+                  href="https://github.com/khan4677/alif_steel_app"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/images/project3.jpg" alt="Project 3 preview" />
+            <div class="card-body">
+              <h3>Project Three</h3>
+              <p>Dashboard with charts and dark mode.</p>
+              <div class="card-actions">
+                <a class="btn btn-ghost" href="#" target="_blank">Live</a>
+                <a class="btn btn-outline" href="#" target="_blank">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/images/project4.jpg" alt="Project 4 preview" />
+            <div class="card-body">
+              <h3>Project Four</h3>
+              <p>Travel blog with MDX‑style posts and search.</p>
+              <div class="card-actions">
+                <a class="btn btn-ghost" href="#" target="_blank">Live</a>
+                <a class="btn btn-outline" href="#" target="_blank">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <section id="contact" class="section container reveal">
-            <h2>Contact</h2>
-            <div class="contact-box">
-                <p>Want to collaborate or just say hi?</p>
-                <p id="phoneNumber" class="phone-number" style="display:none; font-size:1.2em; font-weight:600; color:var(--primary-2);">📞 +880 1646-981878</p>
-                <form id="contactForm" action="https://formspree.io/f/xeolajap" method="POST">
-                    <div class="row">
-                        <input type="text" name="name" placeholder="Your name" required />
-                        <input type="email" name="email" placeholder="Your email" required />
-                    </div>
-                    <br>
-                    <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-                    <button class="btn btn-primary" type="submit">Send</button>
-                    <p id="formStatus" class="status" role="status" aria-live="polite"></p>
-                </form>
+      <section id="contact" class="section container reveal">
+        <h2>Contact</h2>
+        <div class="contact-box">
+          <p>Want to collaborate or just say hi?</p>
+          <p
+            id="phoneNumber"
+            class="phone-number"
+            style="
+              display: none;
+              font-size: 1.2em;
+              font-weight: 600;
+              color: var(--primary-2);
+            "
+          >
+            📞 +880 1646-981878
+          </p>
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/xeolajap"
+            method="POST"
+          >
+            <div class="row">
+              <input type="text" name="name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
             </div>
-        </section>
+            <br />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your message"
+              required
+            ></textarea>
+            <button class="btn btn-primary" type="submit">Send</button>
+            <p
+              id="formStatus"
+              class="status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <p>© <span id="year"></span> MD. MOINUR REZA — All rights reserved.</p>
+      <p>© <span id="year"></span> MD. MOINUR REZA — All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.1.0/tsparticles.bundle.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            if (window.tsParticles && document.getElementById("tsparticles")) {
-                tsParticles.load("tsparticles", {
-                    fullScreen: {
-                        enable: false
-                    },
-                    background: {
-                        color: "transparent"
-                    },
-                    particles: {
-                        number: {
-                            value: 40
-                        },
-                        color: {
-                            value: ["#00ffc6", "#00adff", "#e6f1ff"]
-                        },
-                        shape: {
-                            type: "polygon",
-                            options: {
-                                polygon: {
-                                    sides: 6
-                                }
-                            }
-                        },
-                        opacity: {
-                            value: 0.6
-                        },
-                        size: {
-                            value: {
-                                min: 10,
-                                max: 20
-                            }
-                        },
-                        move: {
-                            enable: true,
-                            speed: 1.5,
-                            direction: "none",
-                            outModes: {
-                                default: "bounce"
-                            }
-                        },
-                        links: {
-                            enable: true,
-                            color: "#00ffc6",
-                            distance: 140,
-                            opacity: 0.25,
-                            width: 1.5
-                        }
-                    },
-                    detectRetina: true
-                });
-            } else {
-                console.error("tsParticles or #tsparticles div not found!");
-            }
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.tsParticles && document.getElementById("tsparticles")) {
+          tsParticles.load("tsparticles", {
+            fullScreen: {
+              enable: false,
+            },
+            background: {
+              color: "transparent",
+            },
+            particles: {
+              number: {
+                value: 40,
+              },
+              color: {
+                value: ["#00ffc6", "#00adff", "#e6f1ff"],
+              },
+              shape: {
+                type: "polygon",
+                options: {
+                  polygon: {
+                    sides: 6,
+                  },
+                },
+              },
+              opacity: {
+                value: 0.6,
+              },
+              size: {
+                value: {
+                  min: 10,
+                  max: 20,
+                },
+              },
+              move: {
+                enable: true,
+                speed: 1.5,
+                direction: "none",
+                outModes: {
+                  default: "bounce",
+                },
+              },
+              links: {
+                enable: true,
+                color: "#00ffc6",
+                distance: 140,
+                opacity: 0.25,
+                width: 1.5,
+              },
+            },
+            detectRetina: true,
+          });
+        } else {
+          console.error("tsParticles or #tsparticles div not found!");
+        }
+      });
     </script>
-</body>
-
+  </body>
 </html>
